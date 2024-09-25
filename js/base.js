@@ -41,16 +41,16 @@ function chart1() {
     //data 为模拟数据
     var data = [{
         name: '京东',
-        value: 3664,
-        percent: '46.3856',
+        value: 36645,
+        percent: '46.3919',
     }, {
         name: '淘宝',
-        value: 2125,
-        percent: '26.9021',
+        value: 21254,
+        percent: '26.9072',
     }, {
-        name: '唯品会',
-        value: 2110,
-        percent: '26.7122',
+        name: '唯品',
+        value: 21091,
+        percent: '26.7008',
     }];
     var myChart = echarts.init(document.getElementById('pie'));
     var myChart1 = echarts.init(document.getElementById('pie1'));
@@ -755,9 +755,9 @@ $('#dateBtns').on('click', function () {
 $('#switchBtn').on('click', 'span', function () {
     $(this).addClass('active').siblings().removeClass('active');
     if ($(this).data('datatype') == 'income') {
-        $('#totalProfit').html('72680.68元');
+        $('#totalProfit').html('7268095.68元');
     } else if ($(this).data('datatype') == 'expend') {
-        $('#totalProfit').html('317次');
+        $('#totalProfit').html('3179835次');
     }
 })
 
