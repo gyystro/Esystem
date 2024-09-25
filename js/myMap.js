@@ -123,7 +123,7 @@
     var XAData = [
       [{ name: "广州" }, { name: "成都", value: 424 }],
       [{ name: "广州" }, { name: "西安", value: 593 }],
-      [{ name: "广州" }, { name: "哈尔滨", value: 377 }],
+      [{ name: "广州" }, { name: "哈尔滨", value: 377}],
       [{ name: "广州" }, { name: "杭州", value: 691 }],
       [{ name: "广州" }, { name: "合肥", value: 162 }]
     ];
@@ -133,12 +133,12 @@
       [{ name: "杭州" }, { name: "郑州", value: 124 }],
       [{ name: "杭州" }, { name: "呼和浩特", value: 179 }],
       [{ name: "杭州" }, { name: "西安", value: 115 }],
-      [{ name: "杭州" }, { name: "西宁", value: 117 }]
+      [{ name: "杭州" }, { name: "西宁", value: 117}]
     ];
   
     var YCData = [
       [{ name: "上海" }, { name: "北京", value: 156 }],
-      [{ name: "上海" }, { name: "西安", value: 134 }],
+      [{ name: "上海" }, { name: "西安", value: 145 }],
       [{ name: "上海" }, { name: "昆明", value: 119 }]
      
   ];
@@ -256,7 +256,7 @@
           trigger: "item",
           formatter: function(params, ticket, callback) {
             if (params.seriesType == "effectScatter") {
-              return "销量：" + params.data.name + "" + params.data.value[2];
+              return "航班班次：" + params.data.name + "" + params.data.value[2];
             } else if (params.seriesType == "lines") {
               return (
                 params.data.fromName +
